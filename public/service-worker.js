@@ -9,7 +9,7 @@ const FILES_TO_CACHE = [
     '/icons/icon-512x512.png',
   ];
   
-  const CACHE_NAME = "my-cache-v1";
+  const CACHE_NAME = "static-cache-v1";
   const DATA_CACHE_NAME = "data-cache-v1";
 
 self.addEventListener("install", function(evt) {
@@ -21,20 +21,6 @@ evt.waitUntil(
     self.skipWaiting();
 });
 
-
-// self.addEventListener("activate", function(evt) {
-//     evt.waitUntil(
-//       caches.keys().then(keyList => {
-//         return Promise.all(
-//           keyList.map(key => {
-//             if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
-//               console.log("Cache cleared.", key);
-//               return caches.delete(key);
-//             }}));
-//         }));
-//     self.clients.claim();
-// });
-  
   self.addEventListener("fetch", function(evt) {
     if (evt.request.url.includes("/api/")) {
       evt.respondWith(
