@@ -1,8 +1,3 @@
-[![](https://img.shields.io/apm/MIT)](https://tymcbrid.github.io/OfflineBudget/.)
-[![](https://img.shields.io/github/pipenv/locked/python-version/tymcbrid/OfflineBudget?style=plastic)](https://tymcbrid.github.io/OfflineBudget/.)
-[![](https://img.shields.io/visual-studio-app-center/releases/size/tymcbrid/OfflineBudget/null)](https://tymcbrid.github.io/OfflineBudget/.)
-
-
 # OfflineBudget   
 ### OfflineBudget is a progressive web application that allows users to track their budgeting, whether or not they have an internet connection. I hope you enjoy the app!
 
